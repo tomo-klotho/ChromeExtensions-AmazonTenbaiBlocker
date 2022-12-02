@@ -1,0 +1,13 @@
+{
+  "name": "AmazonTenbaiBlocker",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Amazonで転売ヤーからの購入を防止するChrome Extension",
+  "content_scripts": [{
+    "matches": ["https://www.amazon.co.jp/*"],
+    "js": [
+      "jquery-3.6.1.min.js",
+      "content.js"
+    ]
+  }]
+}
